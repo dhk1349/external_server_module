@@ -24,6 +24,7 @@ def index():
 
 @app.route('/process', methods=['GET', 'POST'])
 def process():
+    print("handling process page")
     if request.method == 'POST':
         print("0")
         result=request.json
