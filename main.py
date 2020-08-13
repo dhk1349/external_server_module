@@ -29,7 +29,7 @@ def process():
         result=request.json
         print(result)
         angles=[]
-        angles.append(np.array([result['0'], result['1'], result['2']]))
+        angles.append(np.array([float(result['0']), float(result['1']), float(result['2'])]))
         angles=np.array(angles)
         print("1")
         print(angles)
